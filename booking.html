@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Journey | Registan Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">Registan Travel</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html" class="active">Booking</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-hero">
+            <p class="eyebrow">YOUR NEXT ADVENTURE</p>
+            <h1>Every journey begins with a <span>yes.</span></h1>
+            <p>Choose your destination. We will help you discover the heart of Uzbekistan.</p>
+        </section>
+
+        <section class="booking-section">
+            <div class="booking-intro">
+                <p class="eyebrow">01 / YOUR EXPERIENCE</p>
+                <h2>Plan your journey</h2>
+                <p>Tell us a little about your trip and see your total price instantly.</p>
+
+                <div class="booking-note">
+                    <span class="note-number">01</span>
+                    <div>
+                        <h3>Choose your destination</h3>
+                        <p>Three unique ways to explore Uzbekistan.</p>
+                    </div>
+                </div>
+
+                <div class="booking-note">
+                    <span class="note-number">02</span>
+                    <div>
+                        <h3>Travel together, save together</h3>
+                        <p>Groups of five or more receive 10% off.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-panel">
+                <p class="eyebrow">BOOKING REQUEST</p>
+                <h2>Let's make it happen.</h2>
+
+                <form id="booking-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+                        <small class="field-error" id="name-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+                        <small class="field-error" id="email-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tour">Choose your tour</label>
+                        <select id="tour" name="tour">
+                            <option value="35">Old Tashkent Walk — 35 USD</option>
+                            <option value="120">Registan &amp; Gur-e-Amir — 120 USD</option>
+                            <option value="210">Khiva Itchan Kala — 210 USD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="travellers">Number of travellers</label>
+                        <select id="travellers" name="travellers">
+                            <option value="1">1 traveller</option>
+                            <option value="2">2 travellers</option>
+                            <option value="3">3 travellers</option>
+                            <option value="4">4 travellers</option>
+                            <option value="5">5 travellers</option>
+                            <option value="6">6 travellers</option>
+                            <option value="7">7 travellers</option>
+                            <option value="8">8 travellers</option>
+                            <option value="9">9 travellers</option>
+                            <option value="10">10 travellers</option>
+                            <option value="11">11 travellers</option>
+                            <option value="12">12 travellers</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred travel date</label>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+                        <small class="field-error" id="date-error"></small>
+                    </div>
+
+                    <div class="price-summary" aria-live="polite">
+                        <p class="eyebrow">YOUR TOTAL</p>
+                        <p id="price-calculation">1 × 35 USD = 35 USD</p>
+                        <p class="total-price" id="total-price">35 USD</p>
+                        <p class="discount-note" id="discount-note">
+                            Book for 5 or more and save 10%.
+                        </p>
+                    </div>
+
+                    <button type="submit" class="btn booking-submit">
+                        Send booking request ↗
+                    </button>
+
+                    <p id="form-message" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Registan Travel. Explore Uzbekistan with us.</p>
+    </footer>
+
+</body>
+</html>
